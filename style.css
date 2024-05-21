@@ -11,7 +11,7 @@ main {
 body {
   font-family: "Poppins", sans-serif;
   color: white;
-  background: linear-gradient(to right, #30cfd0, #330867);
+  background: linear-gradient(to right, #2c2c2c, #110f2b);
   margin: 0;
   height: 100vh;
   justify-content: center;
