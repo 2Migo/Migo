@@ -1,0 +1,184 @@
+    .outercon {
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+        height: 100vh; 
+    }
+    .containerabout {
+        border: 2px solid black;
+        background: linear-gradient(to bottom, rgba(144, 11, 177, 0.489), rgba(252, 238, 255, 0.489));
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 300px;
+        height: 450px;
+        position: relative;
+    }
+    
+    .banner {
+        width: 100%;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .bannerpic {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    
+    .profile {
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .avatar {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 2px solid rgba(255, 0, 251, 0.311);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        margin-top: 40px; 
+        margin-right: 55%;
+
+    }
+    
+    .info {
+        padding: 5%;
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: rgba(0, 27, 24, 0.247);
+        height: 250px;
+    }
+    
+    .username {
+        color: rgb(162, 242, 252);
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 55%;
+
+    }
+    
+    .badges {
+        position: absolute;
+        margin: -12% 0 0 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 20, 20, 0.46);
+        border-radius: 7px;
+        padding: 5px;
+    }
+    
+
+    .badges img {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+
+    }
+
+    
+    .bio {
+        margin: 10px;
+        font-size: 16px;
+        color: #d0d0d0;
+        text-align: start;
+    }
+    
+    ul {
+        list-style: none;
+      }
+      
+      .socials {
+        background-color: #2309214b;
+        padding-right: 20%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-radius: 10px;
+        margin-top: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .socials .icon-content {
+        margin: 0 10px;
+        position: relative;
+      }
+      .socials .icon-content .tooltip {
+        height: auto;
+        position: absolute;
+        margin-top: 40px;
+        color: #fff;
+        border-radius: 5px;
+        opacity: 0;
+        visibility: hidden;
+        font-size: 14px;
+        left: 50%;
+        transform: translateX(-50%);
+                transition: all 0.3s ease;
+
+      }
+      .socials .icon-content:hover .tooltip {
+        opacity: 1;
+        visibility: visible;
+        top: -75px;
+      }
+      .socials .icon-content a {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 40%;
+        color: #4d4d4d;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+      }
+      .socials .icon-content a:hover {
+        box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+      }
+      .socials .icon-content a svg {
+        position: relative;
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+      }
+      .socials .icon-content a:hover {
+        color: white;
+      }
+      .socials .icon-content a .filled {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #000;
+        transition: all 0.3s ease-in-out;
+      }
+      .socials .icon-content a:hover .filled {
+        height: 100%;
+      }
+      
+      .socials .icon-content a[data-social="discord"] .filled,
+      .socials .icon-content a[data-social="discord"] ~ .tooltip {
+        background-color: #7289da;
+      }
+      
+      .socials .icon-content a[data-social="steam"] .filled,
+      .socials .icon-content a[data-social="steam"] ~ .tooltip {
+        background-color: #171d25;
+      }
+      .socials .icon-content a[data-social="spotify"] .filled,
+      .socials .icon-content a[data-social="spotify"] ~ .tooltip {
+        background-color: #4bbf4f;
+
+      }
